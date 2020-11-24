@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adicionar Produto</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/img/favicon.png" type="image/x-icon">
+    <!-- Arquivos CSS -->
+    <link rel="stylesheet" href="../../assets/css/add-product.css">
+    <!-- Arquivos JS -->
+    <script src="../../assets/js/add-product.js"></script>
+</head>
+<body>
+   
+    <div class="container">
+
+        <div class="back">
+            <a href="../../index.html">↩ Home</a>
+        </div><br><hr>
+
+        <div class="form-img">
+            <img src="../../assets/img/add-product.png" alt="">
+        </div>
+        <br>
+        <h2>Adicionar Produto</h2>
+        <div id="resultAddP"></div>
+        <div class="form">
+            <form action="javascript:void(0)">
+                <input type="text" name="nome" class="input" id="nome" placeholder="Nome do Produto">
+                <input type="number" name="id" class="input" id="id_p" placeholder="ID do Produto">
+                <select name="filtro-cat" class="input" id="filtro-cat">
+                    <option>Categoria</option>
+                    <option value="alimentos">Alimentos</option>
+                    <option value="bebidas">Bebidas</option>
+                    <option value="carnes">Carnes</option>
+                    <option value="frios">Frios</option>
+                    <option value="legumes">Legumes</option>
+                    <option value="frutas">Frutas</option>
+                    <option value="higiene">Higiene</option>
+                    <option value="limpeza">Limpeza</option>
+                  </select>
+                <input type="number" name="cod_b" class="input" id="code" placeholder="Código de Barras">
+                <input type="number" name="preco" class="input" id="preco" placeholder="Preço">
+                <input type="submit" id="btn_add_p" value="Cadastrar">
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

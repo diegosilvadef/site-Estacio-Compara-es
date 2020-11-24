@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estácio Comparações</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- Arquivos CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Arquivos JS -->
+    <script src="assets/js/home.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-logo">
+            <img src="assets/img/money-256px.png" class="item" alt="" />
+            <h1 class="item">Estácio Comparações</h1>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="menu">
+        <div class="items-menu">
+            <a href="pages/add/index.html" class="item">Adicionar Produto</a>
+            <a href="pages/login/index.html" class="item">Login</a>
+            <a href="pages/cadastrar/index.html" class="item">Cadastrar</a>
+        </div>
+        <a href="javascript:void(0)" id="btn-menu">Menu</a>
+    </div>
+    
+    <!-- Search Principal -->
+    <div class="container-search-main">
+        <div id="resultSearchSimple"></div>
+        <form action="javascript:void(0)" method="POST">
+            <input type="text" id="i-search-main" placeholder="Pesquisar Produto">
+            <input type="submit" id="btn-search-main"  value="Pesquisar">
+        </form>
+    </div>
+
+    <!-- Menu Responsivo -->
+    <div class="container-menu">
+       <div class="box-menu-resp">
+           <a href="javascript:void(0)" id="close">X</a>
+            <div class="items-menu-resp">
+                <a href="pages/add/index.html" class="item">Adicionar Produto</a>
+                <a href="pages/login/index.html" class="item">Login</a>
+                <a href="pages/cadastrar/index.html" class="item">Cadastrar</a>
+            </div>
+       </div>
+    </div>
+
+    <!-- Background -->
+    <div class="container-back">
+        <img src="assets/img/background.jpg" alt="">
+    </div>
+
+    <!-- Mensagem -->
+    <div class="container-msg">
+        <div class="box-msg">
+            <h1>Filtre os melhores preços</h1><br>
+            <p>A Estácio Comparações pode te ajudar a encontrar o produto que você deseja, por um baixíssimo preço.</p><br><hr>
+        </div>
+    </div>
+    
+    <!-- Form Cesta Básica -->
+    <div class="container-cesta">
+        <div class="div-form-cesta">
+            <h1>Cesta Básica 🍳</h1><br>
+            <p>Filtre por Cesta Básica em 1 ou mais mercados. Aproveite!</p><br>
+            <div class="form-cesta">
+                <div id="resultCesta"></div>
+                <form action="javascript:void(0)">
+                    <div class="input-checkbox">
+
+                        <input id="input-cesta-01" value="Mercado 01" type="checkbox">
+                        <label for="input-cesta-01">Mercado 01</label>
+    
+                        <input id="input-cesta-02" value="Mercado 02" type="checkbox">
+                        <label for="input-cesta-02">Mercado 02</label>
+    
+                        <input id="input-cesta-03" value="Mercado 03" type="checkbox">
+                        <label for="input-cesta-03">Mercado 03</label>
+    
+                    </div>
+                    <div class="btn-form-cesta">
+                        <button id="btn-f-c">Pesquisar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filtro Avançado -->
+    <div class="div-filtro-advc">
+        <div class="form-filtro-advc">
+
+            <h1>Filtro por Categoria 🔍</h1><br>
+            <p>Filtre por categoria o produto que você deseja.</p><br>
+
+            <div class="form-filtro-cat">
+                <div id="cat01"></div>
+                <select name="filtro-cat" id="filtro-cat01">
+                    <option>Categoria 1</option>
+                    <option value="alimentos">Alimentos</option>
+                    <option value="bebidas">Bebidas</option>
+                    <option value="carnes">Carnes</option>
+                    <option value="frios">Frios</option>
+                  </select>
+                  <br>
+                  <br>
+                  <select name="filtro-cat" id="filtro-cat02">
+                    <option>Categoria 2</option>
+                    <option value="legumes">Legumes</option>
+                    <option value="frutas">Frutas</option>
+                    <option value="higiene">Higiene</option>
+                    <option value="limpeza">Limpeza</option>
+                  </select>
+            </div>
+            <br><hr>
+            <div class="div-select-cat">
+                <div class="form-select-cat">
+                    <input id="input-filtro-01" type="checkbox">
+                    <label for="input-filtro-01">Mercado 01</label>
+
+                    <input id="input-filtro-02" type="checkbox">
+                    <label for="input-filtro-02">Mercado 02</label>
+
+                    <input id="input-filtro-03" type="checkbox">
+                    <label for="input-filtro-03">Mercado 03</label>
+                </div>
+                </div><div id="cat02"></div><hr>
+                <div class="btn-form-filto-cat">
+                    <input type="submit" id="btn-filtro-cat" value="Pesquisar">
+                </div>
+        </div>
+    </div>
+
+    <!-- Mensagem -->
+    <div class="div-msg">
+        <div class="msg">
+            <p>Em algum lugar, alguma coisa incrível está esperando para ser conhecida.</p><br>
+            <h3>Carl Sagan</h3>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-d">
+                <h1>Desenvolvedores 👻</h1><br>
+                <h3>- Diego Franco da Silva</h3>
+                <h3>- Natanael Xavier de Souza</h3>
+                <h3>- Leonardo da Silva Xisto</h3>
+                <h3>- Eric Neves Rodrigues</h3>
+                <h3>- Thiago Daniel Castro da Fonseca</h3>
+                <h3>- Suzana Costa de Moura</h3>
+            </div>
+            <div class="footer-d">
+                <h1>Tecnologias usadas ⚒</h1><br>
+                <h3>- HTML5</h3>
+                <h3>- CSS3</h3>
+                <h3>- JS</h3>
+            </div>
+            <div class="footer-d">
+                <h2>Copyright &copy; 2020</h2><br>
+                <h3>Todos os direitos reservados</h3>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
